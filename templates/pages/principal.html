@@ -2,29 +2,42 @@
 
 {% block titulo %}Principal{% endblock titulo %}
 {% block contenido %}
-    <section>
-        <table>
-            <thead>
-                <tr>
-                    <th>Titulo</th>
-                    <th>Descripción</th>
-                    <th>Fecha finalizacion</th>
-                    <th>Estado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    
-                </tr>
-                {% for nota in notas %}
-                    <tr>
+<section class="contenido-tabla m-auto border">
 
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-        {% comment %} {% if !notas %}
-            <h3>No hay notas</h3>
-        {% endif %} {% endcomment %}
-    </section>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Titulo</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col" class="fecha-estado">Fecha finalizacion</th>
+                <th scope="col" class="fecha-estado">Estado</th>
+                <th class="text-right fila-botones" scope="col"><a href=""><i class="fas fa-plus"></a></i></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% comment %}
+            <tr>
+                <th scope="row">1</th>
+                <td><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi eveniet impedit, ipsum eos quaerat quod quisquam? Facere commodi animi eaque repellat repudiandae. Nisi fuga eos a, iusto eum recusandae cupiditate!</p></td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr> {% endcomment %}
+        </tbody>
+    </table>
+    {% comment %} {% if !notas %}
+    <h3>No hay notas</h3>
+    {% endif %} {% endcomment %}
+</section>
 {% endblock contenido %}
