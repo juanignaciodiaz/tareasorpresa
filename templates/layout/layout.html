@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo | {% block titulo %}{% endblock titulo %}</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="">
-        <h1 class="">MyNotesSoup</h1>
+    <header class="header-tittle">
+        <h1 class="tittle">MyNotesSoup</h1>
     </header>
     {% block contenido %}{% endblock contenido %}
-    <footer class="">
-        <p class="">All rights reserved. MyNotesSoup</p>
+    <footer class="footer-rights">
+        <p class="rights">All rights reserved. MyNotesSoup</p>
     </footer>
 </body>
 </html>

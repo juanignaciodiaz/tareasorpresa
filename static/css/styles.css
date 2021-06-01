@@ -1,3 +1,30 @@
-body{
-    background-color: rgba(4, 7, 40, 0.92);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e4e5e7;
+}
+
+.header-tittle {
+    background-color: #040728;
+    color: #e4e5e7;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.tittle {
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-rights {
+    background-color: #040728;
+    color: #e4e5e7;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.rights {
+    font-family: 'Roboto', sans-serif;
 }
