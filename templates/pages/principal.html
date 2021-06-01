@@ -1,9 +1,30 @@
 {% extends 'layout/layout.html' %}
 
 {% block titulo %}Principal{% endblock titulo %}
-
-
 {% block contenido %}
-<h1>HOla</h1>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Descripción</th>
+                    <th>Fecha finalizacion</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                </tr>
+                {% for nota in notas %}
+                    <tr>
 
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% comment %} {% if !notas %}
+            <h3>No hay notas</h3>
+        {% endif %} {% endcomment %}
+    </section>
 {% endblock contenido %}
