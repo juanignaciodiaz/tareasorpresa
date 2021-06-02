@@ -59,10 +59,12 @@ form {
 .descripcion {
     resize: none;
 }
+
+.boton-volver,
 .boton-guardar{
-    width: 80%;
-    margin: auto;
-    display: block;
+    width: 48%;
+    display: inline-block;
+    margin: 0 3px;
 }
 .boton-guardar:hover{
     text-decoration: none;
