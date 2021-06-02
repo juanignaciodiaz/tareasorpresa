@@ -7,6 +7,7 @@ body {
     background-color: #e4e5e7;
 }
 
+
 .header-tittle {
     background-color: #040728;
     color: #e4e5e7;
@@ -29,22 +30,55 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
+
+.principal {
+    background-color: white;
+    width: 90%;
+    border: 1px solid #bbbbbb;
+    margin: 10px auto;
+    padding: 20px 30px;
+    
+}
+
 .contenido-tabla {
     width: 96%;
+    margin: 10px auto !important;
     /* display: flex; */
 }
 
-/* .fecha-estado{
-    width: 17%;
+form {
+    width: 30%;
+    margin: auto;
 }
-.fila-botones{
-    width: 10%;
-} */
 
-/* th,tr,
-table {
-    border: 1px solid black;
+.fecha {
+    min-width: 158px;
 }
-th {
-    width: 20%;
-} */
+
+.descripcion {
+    resize: none;
+}
+.boton-guardar{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+.boton-guardar:hover{
+    text-decoration: none;
+    border: 1px solid #040728 !important;
+    transition: all 400ms !important;
+}
+@media screen and (max-width:1500px) {
+    form {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    form {
+        width: 80%;
+    }
+
+}

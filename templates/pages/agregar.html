@@ -1,0 +1,14 @@
+{% extends 'layout/layout.html' %}
+
+{% block titulo %}Agregar nota{% endblock titulo %}
+
+{% block contenido %}
+<section class="principal">
+    <form action="" method="post">
+    {% csrf_token %}
+        {{formulario.as_p}}
+
+        <input class="btn btn-link border boton-guardar " type="submit" value="Guardar"> 
+    </form>
+</section>
+{% endblock contenido %}
