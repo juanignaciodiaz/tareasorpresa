@@ -13,6 +13,6 @@ class FormularioNota(forms.ModelForm):
         widgets = {
             'descripcion': forms.Textarea(attrs={'rows':4, 'cols':15}),
             'fecha_finalizacion': forms.DateTimeInput(attrs={'type': 'date'}),
-            'estado': forms.CheckboxInput(attrs={'disabled': 'true'}),
+            # 'estado': forms.CheckboxInput(attrs={'disabled': 'true'}),
         }
-        fields = '__all__'
+        fields = ['titulo', 'descripcion', 'fecha_finalizacion']
