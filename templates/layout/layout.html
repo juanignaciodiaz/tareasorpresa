@@ -1,12 +1,30 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html {% load static %}>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo | {% block titulo %}{% endblock titulo %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <script src="https://kit.fontawesome.com/c558a6f137.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    {% block contenido %}{% endblock contenido %}
+    <header class="header-tittle">
+        <h1 class="tittle">MyNotesSoup</h1>
+    </header>
+    {% block contenido %}
+    {% endblock contenido %}
+    <footer class="footer-rights">
+        <p class="rights">All rights reserved. MyNotesSoup</p>
+    </footer>
+
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </body>
+
 </html>

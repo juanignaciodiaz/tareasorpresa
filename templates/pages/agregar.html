@@ -1,0 +1,15 @@
+{% extends 'layout/layout.html' %}
+
+{% block titulo %}Agregar nota{% endblock titulo %}
+
+{% block contenido %}
+<section class="principal">
+    <form action="" method="post">
+    {% csrf_token %}
+        {{formulario.as_p}}
+
+        <a href="{% url 'principal' %}"><input class="btn btn-link border boton-volver" id="boton-volver" type="button" value = "Volver"></a>
+        <input class="btn btn-link border boton-guardar " type="submit" value="Guardar"> 
+    </form>
+</section>
+{% endblock contenido %}
