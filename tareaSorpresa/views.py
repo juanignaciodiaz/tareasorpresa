@@ -46,3 +46,12 @@ def validarFecha(fecha1):
         validacion = True
 
     return validacion
+
+def eliminarNota(request, idNota):
+    notaEncontrada = None
+    try:
+        notaEncontrada = Nota.objects.get(pk = idNota)
+        notaEncontrada.delete()
+    except:
+        pass
+    return redirect('principal')

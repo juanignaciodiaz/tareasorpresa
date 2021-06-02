@@ -9,25 +9,25 @@
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">Titulo</th>
-                    <th scope="col">Descripcion</th>
+                    <th scope="col" class="descripcion">Descripcion</th>
                     <th scope="col" class="fecha-estado fecha">Fecha finalizacion</th>
                     <th scope="col" class="fecha-estado">Estado</th>
-                    <th class="text-right fila-botones" scope="col"><a href="{% url 'agregarNota' %}"><i class="fas fa-plus"></a></i></th>
+                    <th class="text-right fila-botones" scope="col"><a href="{% url 'agregarNota' %}" class="agregar"><i class="fas fa-plus"></a></i></th>
                 </tr>
             </thead>
             <tbody>
                 {% for nota in notas %}
                     <tr>
                         <td>{{nota.titulo}}</td>
-                        <td>{{nota.descripcion}}</td>
+                        <td><p>{{nota.descripcion}}</p></td>
                         <td>{{nota.fecha_finalizacion}}</td>
 
                         {% if nota.estado == 0 %}
-                        <td>Vencido</td>
+                        <td class="vencido">Vencido</td>
                         {% else %}
-                        <td class="">Vigente</td>
+                        <td class="vigente">Vigente</td>
                         {% endif %}
-
+                        <td><a href="{% url 'eliminarNota' idNota=nota.id %}" class="eliminar"><i class="fas fa-times"></i></a></td>
                         {% comment %} <th>{{nota.estado}}</th> {% endcomment %}
                     </tr>
                 {% endfor %}

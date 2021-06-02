@@ -71,6 +71,35 @@ form {
     border: 1px solid #040728 !important;
     transition: all 400ms !important;
 }
+
+.descripcion {
+    min-width: 300px;
+}
+
+.agregar {
+    color: green;
+    font-size: 16px;
+}
+.agregar:hover {
+    color: green;
+}
+
+.vencido{
+    color: rgb(175, 27, 27);
+}
+
+.vigente{
+    color: rgb(15, 156, 15);
+    /* background-color: rgba(22, 177, 22, 0.432); */
+}
+
+.eliminar {
+    font-size: 20px;
+    color: rgb(175, 27, 27);
+}
+.eliminar:hover {
+    color: rgb(175, 27, 27);
+}
 @media screen and (max-width:1500px) {
     form {
         width: 60%;
